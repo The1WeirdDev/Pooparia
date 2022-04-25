@@ -1,0 +1,65 @@
+<html>
+  <head>
+
+    <title>Pooparia</title>
+  </head>
+
+  <body style="background-color: rgb(0,0,0);">
+      <link rel="stylesheet" type="text/css" href="client/style.css">
+    <div id = "game">
+      <canvas id="webgl-canvas" style="position:absolute;top:0%;"></canvas>
+    </div>
+
+    <div id="chat" class="chat"> 
+      <div id = "message-container" class="message-container"></div>
+          <input type="text" id="message-input">
+          <button type="submit" id="send-button" onclick="PlayerMessageHandler.sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <div id="start-menu">
+      <h1 id= "start-menu-title" class="start-menu-title">Pooparia</h1>
+      <h1 id= "start-menu-enter" class="start-menu-enter" >Enter a name</h1>
+      <input type="text" id="start-menu-input" class="start-menu-input">
+      <button type="submit" class="start-menu-button" onclick="Text.onStartGame()">Play Game</button>
+      
+    </div>  
+
+    <div id = "ui">
+      <div id = "health-bar-background" class="health-bar-background"></div>
+      <div id = "health-bar-slider" class="health-bar-slider"></div>
+      <div id = "health-bar-text" class="health-bar-text"></div>
+    </div>
+
+
+    <div id="scripts">
+      <script src = "socket.io/socket.io.js"></script>
+
+      <script src = "client/scripts/text.js"></script>
+      <script src = "client/scripts/time.js"></script>
+      <script src = "client/scripts/client_block.js"></script>
+      <script src = "client/scripts/client_chunk.js"></script>
+      <script src = "client/scripts/client_world.js"></script>
+      <script src = "client/scripts/utils.js"></script>
+      <script src = "client/scripts/camera.js"></script>
+      <script src = "client/scripts/input.js"></script>
+      <script src = "client/scripts/player_model.js"></script>
+      
+      <script src = "client/scripts/client-item.js"></script>
+      <script src = "client/scripts/player.js"></script>
+      <script src = "client/scripts/inventory.js"></script>
+      <script src = "client/scripts/shader.js"></script>
+      <script src = "client/scripts/shaders.js"></script>
+      <script src = "client/scripts/display.js"></script>
+      <script src = "client/scripts/screens.js"></script>
+      <script src = "client/scripts/mesh.js"></script>
+      <script src = "client/scripts/textures.js"></script>
+      <script src = "client/scripts/player_network_handler.js"></script>
+      <script src = "client/scripts/player_message_handler.js"></script>
+      <script src = "client/scripts/networking.js"></script>
+      <script src = "client/scripts/gl-matrix-min.js"></script>
+
+      <script src = "client/main.js"></script>
+    </div>
+  </body>
+</html>

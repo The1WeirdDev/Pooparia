@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  display: block;
+  z-index: 0;
+}
+
+.position-overlay {
+  color: #fff;
+  left: 4px;
+  padding: 1.2vw;
+  position: absolute;
+  font-size: 1.5vw;
+  top: 4px;
+}
+.fps-overlay {
+  color: #fff;
+  left: 4px;
+  padding: 1.2vw;
+  position: absolute;
+
+  font-size: 1.5vw;
+  top: 60px;
+}
+
+.current-block-overlay {
+  color: #fff;
+  padding: 1.2vw;
+  font-size: 1.5vw;
+
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  margin-left: -1.4vw;
+}
+
+.chat {
+  position: absolute;
+  top: 120px;
+  left: 25px;
+}
+
+.health-bar-background {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  opacity: 75%;
+  left: 70%;
+  width: 300px;
+  height: 50px;
+  max-width: 300px;
+  max-height: 50px;
+}
+
+.health-bar-slider {
+  position: absolute;
+  background-color: red;
+  left: 70%;
+  width: 300px;
+  height: 50px;
+  max-width: 300px;
+  max-height: 50px;
+}
+
+.health-bar-text {
+  position: absolute;
+  left: 73%;
+  font-size: 40px;
+}
+
+#message-container {
+  width: 350px;
+  height: 75px;
+  max-width: 350px;
+  max-height: 75px;
+
+  overflow-y: scroll;
+}
+
+.start-menu-title {
+  position: fixed;
+  font-size: 6vw;
+  top: 20%;
+  left: 50%;
+  margin-left: -12vw;
+}
+.start-menu-enter {
+  position: fixed;
+  font-size: 3vw;
+  top: 35%;
+  left: 50%;
+  margin-left: -9vw;
+}
+.start-menu-input {
+  /*size*/
+  width: 300px;
+  height: 25px;
+  max-width: 300px;
+  max-height: 25px;
+
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  margin-left: -150px;
+}
+.start-menu-button {
+  background-color: white;
+  max-width: 300px;
+  max-height: 25px;
+  width: 300px;
+  height: 25px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+}
+
+#message-container div {
+  background-color: #ccc;
+  padding: 5px;
+
+  width: 350px;
+  height: 100px;
+  max-width: 350px;
+  max-height: 100px;
+}
+#message-container div:nth-child(2n) {
+  background-color: #fff;
+  max-width: 300px;
+  max-height: 25px;
+  width: 300px;
+  height: 25px;
+}
+
+#send-container {
+  position: relative;
+
+  background-color: white;
+  max-width: 200px;
+  max-height: 25px;
+  width: 200px;
+  height: 25px;
+
+  display: flex;
+}
+
+#message-input {
+  width: 200px;
+  height: 25px;
+  max-width: 200px;
+  max-height: 25px;
+}

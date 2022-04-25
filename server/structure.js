@@ -1,0 +1,3 @@
+class Structure {
+  constructor() {}
+}

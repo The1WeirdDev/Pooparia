@@ -1,0 +1,20 @@
+{
+  "name": "newest-pooparia",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "simplex-noise": "3.0.1",
+    "socket.io": "^4.4.1"
+  },
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  },
+  "keywords": [],
+  "description": ""
+}
